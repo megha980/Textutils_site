@@ -1,0 +1,23 @@
+Get and Post request
+
+when you have to send any data securly like user credentials then we use post request instead get .
+and get reuest has some limit for sending data if that incraeses error (414 url is too long) will 
+occured so we use post request
+
+
+how to send post reuest:
+
+1. in views.py file 
+djtext = request.POST.get('text','default')
+and change other GET into POST
+
+2. index.html
+change form method in post
+
+** check CSRF(cross site request forgery) mechanism from internet
+CSRF token to check that request is coming from your site only
+
+To get CSRF token
+1. go in index.html file
+in form tag 
+<form action="/analyze" method='post'> {% csrf_token %}

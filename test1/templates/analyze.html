@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title>Analyzing text </title>
+</head>
+<body>
+   <h1>Your analyzed text-  {{purpose}}</h1>
+   <p>
+
+    {% comment %} pre tag to stop the new line chop off, 
+    html bydefault don't consider new line in text and chop that off, 
+    to keep use pre tag {% endcomment %}
+    <pre>
+    {{analyzed_text}}
+    </pre>
+   </p>
+</body>
+</html>

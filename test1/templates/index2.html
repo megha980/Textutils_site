@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Utils</title>
+</head>
+<body>
+    <p> Welcome Guys, please visit textutils sites created by : {{name}} and place is {{place}}   
+    </p>
+    <form action='/analyze' method='get'>
+        <textarea name='text'style="width: 334px; height: 75px;"> </textarea>
+        <br>
+        
+        <input type="checkbox" name = "checkbtn"> Remove Punctuations<br>
+        <input type="checkbox" name = "fullcaps">UPPER CASE <br>
+        <input type="checkbox" name = "remover">New Line Remover <br>
+        <input type="checkbox" name = "spaceremover">Extra space Remover <br>
+        <button type="submit" name = "btn">Analyze Text</button>
+
+    </form>
+    {% comment %} sending variable inside django tempalte using {{}}   {% endcomment %}
+</body>
+</html>
